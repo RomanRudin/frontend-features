@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css"
+    ><link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center">
+    <button type="button" class="btn btn-primary" id="btnEnter">
+        <i class="fas fa-sign-in-alt"></i>
+        <span>Авторизация</span>
+    </button>
+    <div class="d-flex flex-column bg-warning rounded-3 position-absolute p-3" id="form">
+        <label class="form-label">
+            <span>Введите логин:</span>
+            <input
+                type="email"
+                class="form-control"
+                id="emailValue"
+                placeholder="name@example.com"
+            />
+        </label>
+        <nav class="d-flex justify-content-between">
+            <button class="btn btn-dark" id="btnLogin">
+                <i class="fad fa-door-closed"></i>
+                <span>Вход</span>
+            </button>
+            <button class="btn btn-danger" id="btnClose">
+                <i class="fas fa-sign-in"></i>
+                <span>Назад</span>
+            </button>
+        </nav>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+nav{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+div {
+    width: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+img{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+i {
+    padding: 10px;
+    font-size: 50px;
+    color: azure;
+    cursor: pointer;
+}
